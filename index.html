@@ -7,7 +7,7 @@
 <meta name="description" content="Les applications Bengacoon : lithothérapie, oracle, radiesthésie, Fleurs de Bach, numérologie, respiration, entraînement et suivi santé. Sans compte, sans publicité, hors ligne.">
 <link rel="icon" href="assets/bengacoon360.png">
 <meta property="og:title" content="Bengacoon — toutes les applications">
-<meta property="og:description" content="Dix applications de bien-être et de suivi, pensées pour rester sur votre téléphone : sans compte, sans publicité, hors ligne.">
+<meta property="og:description" content="Neuf applications de bien-être et de suivi, pensées pour rester sur votre téléphone : sans compte, sans publicité, hors ligne.">
 <meta property="og:image" content="assets/bengacoon360.png">
 <style>
   :root{
@@ -49,7 +49,10 @@
   .stack{display:flex;flex-direction:column;gap:20px}
   .app{display:grid;grid-template-columns:230px 1fr;background:#fff;border:1px solid var(--creme-2);border-radius:20px;overflow:hidden;position:relative}
   .app::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:var(--acc,var(--or));z-index:2}
-  @media(max-width:720px){.app{grid-template-columns:1fr}}
+  .app.slim{grid-template-columns:180px 1fr}
+  .app.slim .media .shot{width:126px}
+  .app.slim .media.noshot .ico{width:88px;height:88px}
+  @media(max-width:720px){.app,.app.slim{grid-template-columns:1fr}}
 
   .media{display:flex;align-items:center;justify-content:center;padding:26px 20px;background:linear-gradient(165deg,var(--creme) 0%,var(--creme-2) 100%);border-right:1px solid var(--creme-2)}
   @media(max-width:720px){.media{border-right:0;border-bottom:1px solid var(--creme-2);padding:24px}}
@@ -101,8 +104,8 @@
       <span class="brand">Bengacoon<small>toutes les applications</small></span>
     </a>
     <nav>
-      <a href="#payantes">Complètes</a>
       <a href="#gratuites">Gratuites</a>
+      <a href="#payantes">Complètes</a>
       <a href="#ensemble">Tout-en-un</a>
     </nav>
   </div>
@@ -112,7 +115,7 @@
   <span class="gem g1"></span><span class="gem g2"></span>
   <div class="wrap">
     <div class="par">par Bengacoon</div>
-    <h1>Dix applications,<br>une même exigence</h1>
+    <h1>Neuf applications,<br>une même exigence</h1>
     <p>Des compagnons de bien-être et de suivi pensés pour rester sur votre téléphone : sans compte à créer, sans publicité, et utilisables hors ligne.</p>
     <div class="chips">
       <span class="chip">🔒 Vos données restent chez vous</span>
@@ -123,7 +126,68 @@
   </div>
 </div>
 
-<section id="payantes">
+<section id="gratuites">
+  <div class="wrap">
+    <h2>Entièrement gratuites</h2>
+    <p class="h2sub">Aucune version payante, aucune fonction verrouillée, aucune publicité.</p>
+    <div class="stack">
+      <article class="app slim" style="--acc:#E3C77A">
+        <div class="media noshot"><img class="ico" src="assets/numerocoon.png" alt="Numerocoon" loading="lazy"></div>
+        <div class="body">
+          <div class="top">
+            <img class="badge" src="assets/numerocoon.png" alt="">
+            <div><h3>Numerocoon</h3><span class="kind">Numérologie & astrologie</span></div>
+            <span class="tag free">Gratuit</span>
+          </div>
+          <p>Votre thème numérologique détaillé — chemin de vie, expression, âme, défis, cycles — et votre ascendant calculé depuis votre heure de naissance. Horoscope du jour et de la semaine, compatibilité et guidance. Entièrement gratuit, en 9 langues.</p>
+          
+          <a class="go" href="https://jdviallat.github.io/numerocoon-site/">Voir la page de Numerocoon →</a>
+        </div>
+      </article>
+      <article class="app slim" style="--acc:#D6B678">
+        <div class="media"><img class="shot" src="assets/shot-respicoon.png" alt="Respicoon en image" loading="lazy"></div>
+        <div class="body">
+          <div class="top">
+            <img class="badge" src="assets/respicoon.png" alt="">
+            <div><h3>Respicoon</h3><span class="kind">Respiration</span></div>
+            <span class="tag free">Gratuit</span>
+          </div>
+          <p>17 séances de cohérence cardiaque et de respiration guidée, portées par un souffle animé et de vraies ambiances sonores. Créez vos propres programmes et suivez vos séries, en douceur.</p>
+          
+          <a class="go" href="https://jdviallat.github.io/respicoon-site/">Voir la page de Respicoon →</a>
+        </div>
+      </article>
+      <article class="app slim" style="--acc:#7C5CE0">
+        <div class="media"><img class="shot" src="assets/shot-fitcoon.png" alt="Fitcoon en image" loading="lazy"></div>
+        <div class="body">
+          <div class="top">
+            <img class="badge" src="assets/fitcoon.png" alt="">
+            <div><h3>Fitcoon</h3><span class="kind">Musculation & cardio</span></div>
+            <span class="tag free">Gratuit</span>
+          </div>
+          <p>Votre carnet d'entraînement : un coach qui génère la séance du jour, plus de 160 exercices animés avec les muscles travaillés, des programmes, le suivi des records et le mode salle. Sans pub, sans abonnement.</p>
+          
+          <a class="go" href="https://jdviallat.github.io/fitcoon-site/">Voir la page de Fitcoon →</a>
+        </div>
+      </article>
+      <article class="app slim" style="--acc:#C98A4B">
+        <div class="media"><img class="shot" src="assets/shot-lifecoon.png" alt="Lifecoon en image" loading="lazy"></div>
+        <div class="body">
+          <div class="top">
+            <img class="badge" src="assets/lifecoon.png" alt="">
+            <div><h3>Lifecoon</h3><span class="kind">Suivi santé</span></div>
+            <span class="tag free">Gratuit</span>
+          </div>
+          <p>Tension, glycémie, poids, traitements, ordonnances et rendez-vous, réunis dans un carnet clair pensé pour les patients chroniques, les seniors et les aidants. Un rapport PDF prêt pour votre médecin, et tout reste chiffré sur l'appareil.</p>
+          
+          <a class="go" href="https://jdviallat.github.io/lifecoon-site/">Voir la page de Lifecoon →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="payantes" class="alt">
   <div class="wrap">
     <h2>Explorer gratuitement, approfondir si vous le souhaitez</h2>
     <p class="h2sub">Ces quatre applications se découvrent librement. La version complète, elle, sert à <strong>garder</strong> : enregistrer vos lectures, tenir un journal, suivre des dossiers dans la durée et exporter votre travail. Un achat unique, à vie, sans abonnement.</p>
@@ -185,85 +249,12 @@
   </div>
 </section>
 
-<section id="gratuites" class="alt">
-  <div class="wrap">
-    <h2>Entièrement gratuites</h2>
-    <p class="h2sub">Aucune version payante, aucune fonction verrouillée, aucune publicité.</p>
-    <div class="stack">
-      <article class="app" style="--acc:#E3C77A">
-        <div class="media noshot"><img class="ico" src="assets/numerocoon.png" alt="Numerocoon" loading="lazy"></div>
-        <div class="body">
-          <div class="top">
-            <img class="badge" src="assets/numerocoon.png" alt="">
-            <div><h3>Numerocoon</h3><span class="kind">Numérologie & astrologie</span></div>
-            <span class="tag free">Gratuit</span>
-          </div>
-          <p>Votre thème numérologique détaillé — chemin de vie, expression, âme, défis, cycles — et votre ascendant calculé depuis votre heure de naissance. Horoscope du jour et de la semaine, compatibilité et guidance. Entièrement gratuit, en 9 langues.</p>
-          
-          <a class="go" href="https://jdviallat.github.io/numerocoon-site/">Voir la page de Numerocoon →</a>
-        </div>
-      </article>
-      <article class="app" style="--acc:#D6B678">
-        <div class="media"><img class="shot" src="assets/shot-respicoon.png" alt="Respicoon en image" loading="lazy"></div>
-        <div class="body">
-          <div class="top">
-            <img class="badge" src="assets/respicoon.png" alt="">
-            <div><h3>Respicoon</h3><span class="kind">Respiration</span></div>
-            <span class="tag free">Gratuit</span>
-          </div>
-          <p>17 séances de cohérence cardiaque et de respiration guidée, portées par un souffle animé et de vraies ambiances sonores. Créez vos propres programmes et suivez vos séries, en douceur.</p>
-          
-          <a class="go" href="https://jdviallat.github.io/respicoon-site/">Voir la page de Respicoon →</a>
-        </div>
-      </article>
-      <article class="app" style="--acc:#7C5CE0">
-        <div class="media"><img class="shot" src="assets/shot-fitcoon.png" alt="Fitcoon en image" loading="lazy"></div>
-        <div class="body">
-          <div class="top">
-            <img class="badge" src="assets/fitcoon.png" alt="">
-            <div><h3>Fitcoon</h3><span class="kind">Musculation & cardio</span></div>
-            <span class="tag free">Gratuit</span>
-          </div>
-          <p>Votre carnet d'entraînement : un coach qui génère la séance du jour, plus de 160 exercices animés avec les muscles travaillés, des programmes, le suivi des records et le mode salle. Sans pub, sans abonnement.</p>
-          
-          <a class="go" href="https://jdviallat.github.io/fitcoon-site/">Voir la page de Fitcoon →</a>
-        </div>
-      </article>
-      <article class="app" style="--acc:#C98A4B">
-        <div class="media"><img class="shot" src="assets/shot-lifecoon.png" alt="Lifecoon en image" loading="lazy"></div>
-        <div class="body">
-          <div class="top">
-            <img class="badge" src="assets/lifecoon.png" alt="">
-            <div><h3>Lifecoon</h3><span class="kind">Suivi santé</span></div>
-            <span class="tag free">Gratuit</span>
-          </div>
-          <p>Tension, glycémie, poids, traitements, ordonnances et rendez-vous, réunis dans un carnet clair pensé pour les patients chroniques, les seniors et les aidants. Un rapport PDF prêt pour votre médecin, et tout reste chiffré sur l'appareil.</p>
-          
-          <a class="go" href="https://jdviallat.github.io/lifecoon-site/">Voir la page de Lifecoon →</a>
-        </div>
-      </article>
-      <article class="app" style="--acc:#2E7D6B">
-        <div class="media"><img class="shot" src="assets/shot-bengacoon.png" alt="Bengacoon en image" loading="lazy"></div>
-        <div class="body">
-          <div class="top">
-            <img class="badge" src="assets/bengacoon.png" alt="">
-            <div><h3>Bengacoon</h3><span class="kind">Compagnon animal &amp; bien-être</span></div>
-            <span class="tag free">Gratuit</span>
-          </div>
-          <p>Le carnet de votre animal : profil, soins, vaccins, vétérinaire et documents réunis au même endroit. Un journal de bien-être pour noter l'état et suivre l'évolution, des rappels de soins, et un espace dédié à la communication animale. Chiffré, et tout reste sur l'appareil.</p>
-          <a class="go" href="https://bengacoon.com/bengacoon/">Voir la page de Bengacoon →</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section id="ensemble">
   <div class="wrap">
     <h2>Tout-en-un</h2>
     <p class="h2sub">Le même socle, réuni dans une seule application — en cours de développement.</p>
     <div class="stack">
-      <article class="app" style="--acc:#F39C12">
+      <article class="app slim" style="--acc:#F39C12">
         <div class="media noshot"><img class="ico" src="assets/bengacoon360.png" alt="Bengacoon 360 &amp; Cocoon" loading="lazy"></div>
         <div class="body">
           <div class="top">
